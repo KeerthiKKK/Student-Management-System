@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'crudproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': "studcruddb",#Your db name
+        'USER': "root",# your username
+        'PASSWORD':'',#your pass
+        'HOST':'localhost',
+        'PORT':'3306'
     }
 }
 

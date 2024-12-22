@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .forms import StudentForm,LoginForm,RegistrationForm
 # Create your views here.
+
 def index(request):
     return render(request,"students/index.html",{
         "students":Student.objects.all()
